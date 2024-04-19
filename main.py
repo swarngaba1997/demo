@@ -54,7 +54,7 @@ st.markdown("<h3 style='color: #02ddfa'>Tailored App Recommendations at Your Fin
 def validate_app_inputs(app_id, app_name, developer_id, genre, size, app_version, ios_version, released_date, updated_date, avg_user_rating, age_group, developer_name, price, currency):
     
     # Ensure all mandatory fields are filled
-    if not all([app_id, app_name, developer_id, genre, size, app_version, ios_version, released_date, age_group, developer_name, price, currency]):
+    if not all([app_id, app_name, developer_id, genre, size, app_version, ios_version, released_date, updated_date, avg_user_rating, age_group, developer_name, price, currency]):
         return "Please fill in all mandatory fields."
     
     # Numerical fields validation (price and size)
@@ -127,8 +127,8 @@ def create_app():
     app_version = st.text_input("App Version*")
     ios_version = st.text_input("iOS Version*")
     released_date = st.text_input("Released Date (YYYY-MM-DD)*")
-    updated_date = st.text_input("Updated Date (YYYY-MM-DD)")
-    avg_user_rating = st.text_input("Average User Rating")
+    updated_date = st.text_input("Updated Date (YYYY-MM-DD)*")
+    avg_user_rating = st.text_input("Average User Rating*")
     age_group = st.text_input("Age Group*")
     
     # Get additional information for developer and pricing

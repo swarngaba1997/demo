@@ -1,7 +1,6 @@
 xtarfile
 streamlit
 pandas
-sqlite3
 Python-IO
 pybase64
 plotly-express

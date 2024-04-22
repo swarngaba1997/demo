@@ -47,7 +47,7 @@ def set_background(image_path, brightness_factor=0.99):
 set_background(r"DiscoverEaseBG.jpg", brightness_factor=0.99)
 
 # Display headings in the app
-st.markdown('<h1 style="color: #fac002;">DISCOVER EASE</h1>', unsafe_allow_html=True)
+st.markdown('<h1 style="color: #fac002;">DiscoverEase</h1>', unsafe_allow_html=True)
 st.markdown("<h3 style='color: #02ddfa'>Tailored App Recommendations at Your Fingertips</h3>", unsafe_allow_html=True)       
 
 # Function to validate inputs for a new or updated app entry
